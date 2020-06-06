@@ -1,0 +1,31 @@
+
+<div class="row justify-content-center ">
+  <div class="card text-center " style="width: 18rem;">
+    <div class="wrapper fadeInDown">
+      <div id="formContent">
+        <!-- Tabs Titles -->
+    
+        <!-- Icon -->
+        <div class="fadeIn first">
+          <img  src="../../../../../../iconos-bit/dollar-sign.svg" id="icon" alt="User Icon" />
+    
+        </div>
+    
+        <!-- Login Form -->
+        <form action="">
+          <input type="text" id="login" class="fadeIn first" name="email" [(ngModel)]="user.email" placeholder="email">
+          <input type="text" id="name" class="fadeIn second " name="name"[(ngModel)]="user.name" placeholder="name">
+          <input type="text" id="password" class="fadeIn third " name="password"[(ngModel)]="user.password" placeholder="password">
+          <button type="button" class="btn btn-outline-dark btn-lg btn-block" (click)="login()">login</button>
+          <button type="button" class="btn btn-outline-dark btn-lg btn-block"  routerLink="/singUp" routerLinkActivate='true'>Sing Up</button>
+        </form>
+    
+        <!-- Remind Passowrd -->
+        <div id="formFooter">
+          <a class="underlineHover" href="#">Forgot Password?</a>
+        </div>
+    
+      </div>
+    </div>
+  </div>
+</div>

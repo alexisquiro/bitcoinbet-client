@@ -1,0 +1,21 @@
+<div class="row justify-content-center ">
+  
+    <div class="col-4 m-sm-5"> 
+     
+        <div class="card-body">
+          <h5 class="card-title text-center">{{this.Game.team1}}</h5>
+          <p class="card-text text-center"> {{this.Game.porcent1}}</p>
+          <button type="button" class="btn btn-outline-dark btn-lg btn-block" routerLink="/betform" routerLinkActivate='true' (click)="Bet1(this.Game.idGame)" >Apostar</button>   
+        </div>
+      </div> 
+      
+    <div class="col-4 m-sm-5">   
+       
+        <div class="card-body">
+          <h5 class="card-title text-center">{{this.Game.team2}}</h5>
+          <p class="card-text text-center">{{this.Game.porcent2}} </p>
+          <button type="button" class="btn btn-outline-dark btn-lg btn-block" routerLink="/betform" routerLinkActivate='true' (click)="Bet2(this.Game.idGame)" >Apostar</button>   
+          </div>
+    </div>
+     
+  </div>

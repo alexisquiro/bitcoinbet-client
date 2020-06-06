@@ -1,0 +1,7 @@
+ <ul class="list-group">
+     <li class="list-group-item" *ngFor="let game of games" >
+         <app-bet [Game]=game (bet)="createBet($event)"></app-bet>
+       
+     </li>
+      
+</ul>      

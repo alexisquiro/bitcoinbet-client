@@ -1,0 +1,26 @@
+
+<div class="row justify-content-center ">
+    <div class="card text-center " style="width: 18rem;">
+      <div class="wrapper fadeInDown">
+        <div id="formContent">
+          <!-- Tabs Titles -->
+      
+          <!-- Icon -->
+          <div class="fadeIn first">
+            <img src="http://danielzawadzki.com/codepen/01/icon.svg" id="icon" alt="User Icon" />
+          </div>
+      
+          <!-- betform-->
+          <form action="">
+            <input type="text" id="login" class="fadeIn first" name="email" [(ngModel)]="BetUser.wallet" placeholder="Address wallet">
+            <input type="text" id="name" class="fadeIn second " name="name"[(ngModel)]="user.name" placeholder="name">
+            <input type="text" id="password" class="fadeIn third " name="password"[(ngModel)]="user.password" placeholder="password">
+            <button type="button" class="btn btn-outline-dark btn-lg btn-block" (click)="letsgo()" >bet</button>
+          </form>
+      
+          
+      
+        </div>
+      </div>
+    </div>
+  </div>
